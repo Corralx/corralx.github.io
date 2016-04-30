@@ -1,3 +1,30 @@
+$font_dir: 'fonts/';
+
+@function _simple-font-url($name, $extension)
+{
+    @return url($font_dir + $name + '-webfont.' + $extension);
+}
+
+@function _full-font-url($name, $extension, $format, $hash: '')
+{
+    @return url($font_dir + '/' + $name + '-webfont.' + $extension + $hash) format($format);
+}
+
+@mixin register-font($name)
+{
+    @font-face {
+        font-family: $name;
+        font-style: normal;
+        font-weight: normal;
+        src: _simple-font-url($name, 'eot');
+        src: _full-font-url($name, 'woff', 'embedded-opentype', '?#iefix'),
+             _full-font-url($name, 'ttf', 'truetype'),
+             _full-font-url($name, 'svg', 'esvg', '?#' + $name);
+	}
+}
+
+@include register-font("OpenSans-Regular");
+
 $gray-1: #f9f9f9;
 $gray-2: #ccc;
 $gray-3: #767676;
@@ -10,21 +37,27 @@ $yellow: #f4bf75;
 $green: #90a959;
 $cyan: #75b5aa;
 $blue: #268bd2;
-// $blue: #6a9fb5;
 $brown: #8f5536;
 
-$root-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
-$root-font-size: 16px;
+$root-font-family: "OpenSans-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$root-font-size: 14px;
 $root-line-height: 1.5;
 
-$body-color: #515151;
-$body-bg: #fff;
+$title-color: #f9f2d5;
+$title-link-color: #e8e8e8;
+$title-hover-color: #ffeb9b;
+
+$body-color: #f0e7d5;
+$body-bg: #272622;
 $link-color: $blue;
 
 $border-color: #e5e5e5;
 
 $large-breakpoint: 38em;
 $large-font-size: 20px;
+$small-font-size: 14px;
 
-$code-font-family: Menlo, Monaco, "Courier New", monospace;
+// $code-font-family: Menlo, Monaco, "Courier New", monospace;
+$code-font-family: 'Lucida Sans', Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, monospace;
 $code-color: #bf616a;
+$code-font-size: 12px;

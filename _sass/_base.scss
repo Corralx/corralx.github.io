@@ -17,11 +17,12 @@ body {
 html {
   font-family: $root-font-family;
   font-size: $root-font-size;
+  font-weight: normal;
   line-height: $root-line-height;
 
-  @media (min-width: $large-breakpoint) {
-    font-size: $large-font-size;
-  }
+  //@media (min-width: $large-breakpoint) {
+  //  font-size: $large-font-size;
+  //}
 }
 
 body {
@@ -39,7 +40,7 @@ a {
   // `:focus` is linked to `:hover` for basic accessibility
   &:hover,
   &:focus {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   strong {
@@ -55,9 +56,9 @@ img {
 }
 
 table {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   width: 100%;
-  font-size: 85%;
+  font-size: 100%;
   border: 1px solid #e5e5e5;
   border-collapse: collapse;
 }

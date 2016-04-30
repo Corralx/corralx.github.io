@@ -16,7 +16,10 @@
 .page-title,
 .post-title,
 .post-title a {
-  color: #303030;
+  color: $title-link-color;
+}
+.post-title a:hover {
+  color: $title-hover-color;
 }
 .page-title,
 .post-title {

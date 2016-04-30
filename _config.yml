@@ -2,12 +2,14 @@
 permalink:           pretty
 
 highlighter:         rouge
+markdown: kramdown
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
 
 # Setup
-title:               Poole
-tagline:             The Jekyll Butler
-url:                 http://getpoole.com
-paginate:            1
+title:               Corralx
+tagline:             My slice of reality
+url:                 http://corralx.github.io
+paginate:            10
 baseurl:             ""
 
 # Assets
@@ -19,16 +21,15 @@ sass:
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
-
-# Custom vars
-version:             2.0.0
-github:
-  repo:              https://github.com/poole/poole
+  name:              Matteo Bertello
+  email:             bertello.matteo@gmail.com
+  github: corralx
+  twitter: corralx
+  stackoverflow: 4141391
+  linkedin: corralx
 
 # Gems
 gems:
   - jekyll-paginate
   - jekyll-gist
+  - jekyll-compass

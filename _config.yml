@@ -8,7 +8,8 @@ markdown_ext:  markdown,mkdown,mkdn,mkd,md
 # Setup
 title:               Corralx
 tagline:             My slice of reality
-url:                 http://corralx.github.io
+url:                 https://corralx.github.io
+repo:                https://github.com/corralx/corralx.github.io
 paginate:            10
 baseurl:             ""
 

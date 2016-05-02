@@ -15,7 +15,7 @@ There are currently three themes built on Poole:
 * [Lanyon](http://lanyon.getpoole.com)
 * [Enfield](http://enfield.getpoole.com)
 
-Learn more and contribute on [GitHub]({{ site.github.repo }}).
+Learn more and contribute on [GitHub]({{ site.repo }}).
 
 ### What's included
 
@@ -36,6 +36,6 @@ Poole and its themes are by preference a forward-thinking project. In addition t
 
 ### Download
 
-These themes are developed on and hosted with GitHub. Head to the [GitHub repository]({{ site.github.repo }}) for downloads, bug reports, and features requests.
+These themes are developed on and hosted with GitHub. Head to the [GitHub repository]({{ site.repo }}) for downloads, bug reports, and features requests.
 
 Thanks!

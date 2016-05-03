@@ -10,8 +10,9 @@
     {% endif %}
   </title>
 
-  <script async src="{{ site.baseurl }}/public/responsive-nav.min.js"></script>
-  <link rel="preload" href="{{ site.baseurl }}/styles.css" as="style" onload="this.rel='stylesheet'">
+  <script id="navbar-script" async src="{{ site.baseurl }}/public/responsive-nav.min.js"></script>
+  <!--<link rel="preload" href="{{ site.baseurl }}/styles.css" as="style" onload="this.rel='stylesheet'">-->
+  <link rel="stylesheet" href="{{ site.baseurl }}/styles.css" media="none" onload="if(media!='all')media='all'">
   <noscript><link rel="stylesheet" href="{{ site.baseurl }}/styles.css"></noscript>
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
   <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.ico">

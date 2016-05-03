@@ -24,6 +24,7 @@ $font_dir: 'fonts/';
 }
 
 @include register-font("OpenSans-Regular");
+@include register-font("OpenSans-Light");
 
 $gray-1: #f9f9f9;
 $gray-2: #ccc;

@@ -3,6 +3,8 @@
 # only main files contain this front matter, not partials.
 ---
 
+{% include responsive-nav.css %}
+
 @import "variables";
 @import "base";
 @import "type";
@@ -13,3 +15,5 @@
 @import "posts";
 @import "pagination";
 @import "message";
+
+@import "fa/font-awesome";

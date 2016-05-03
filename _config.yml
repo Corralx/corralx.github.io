@@ -10,7 +10,7 @@ title:               Corralx
 tagline:             My slice of reality
 url:                 https://corralx.github.io
 repo:                https://github.com/corralx/corralx.github.io
-paginate:            10
+paginate:            3
 baseurl:             ""
 
 # Assets
@@ -28,7 +28,8 @@ author:
   github: corralx
   twitter: corralx
   stackoverflow: 4141391
-  linkedin: corralx
+  stackexchange: 368929
+  linkedin: matteo-bertello-06538017
 
 # Gems
 gems:

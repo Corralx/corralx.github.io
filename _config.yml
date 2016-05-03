@@ -23,6 +23,7 @@ sass:
 # About/contact
 author:
   name:              Matteo Bertello
+  username:          Corralx
   email:             bertello.matteo@gmail.com
   github: corralx
   twitter: corralx
@@ -33,4 +34,3 @@ author:
 gems:
   - jekyll-paginate
   - jekyll-gist
-  - jekyll-compass

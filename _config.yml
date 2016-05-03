@@ -12,24 +12,25 @@ url:                 https://corralx.github.io
 repo:                https://github.com/corralx/corralx.github.io
 paginate:            3
 baseurl:             ""
+excerpt_separator: <!--more-->
 
 # Assets
 #
 # We specify the directory for Jekyll so we can use @imports.
 sass:
   sass_dir:          _sass
-  style:            :compressed
+  style:             compressed
 
 # About/contact
 author:
   name:              Matteo Bertello
   username:          Corralx
   email:             bertello.matteo@gmail.com
-  github: corralx
-  twitter: corralx
-  stackoverflow: 4141391
-  stackexchange: 368929
-  linkedin: matteo-bertello-06538017
+  github:            corralx
+  twitter:           corralx
+  stackoverflow:     4141391
+  stackexchange:     368929
+  linkedin:          matteo-bertello-06538017
 
 # Gems
 gems:

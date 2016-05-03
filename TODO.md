@@ -2,3 +2,4 @@
 * Find a way to make the top menu work as in http://rcrmn.nl/jekyll-dusk-blog/2015/07/31/Using-this-jekyll-blog-theme/
 * Rework the page navigator on the bottom
 * Fix the title tag in the head
+* Investigate the more excerpt separator

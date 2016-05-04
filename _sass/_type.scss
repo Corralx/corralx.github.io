@@ -96,52 +96,6 @@ a.fill {
   height: 100%;
 }
 
-.nav-collapse {
-  padding: 0;
-  margin: 20px 0 30px 0;
-  border-bottom: 1px solid #fff;
-
-  ul {
-    margin: 0;
-    padding: 0;
-    display: -webkit-flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-between;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    list-style-type: none;
-    width: 100%;
-
-    li {
-      font-family: "OpenSans-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-weight: normal;
-      list-style: none;
-      -webkit-flex: 1 0;
-      -webkit-box-flex: 1;
-      -ms-flex: 1 0;
-      flex: 1 0;
-      text-align: center;
-
-      a {
-        padding: 20px 0;
-        box-sizing: border-box;
-        display: inline-block;
-      }
-    }
-  }
-}
-
-ul li a.icon {
-  padding-top: 18px;
-  padding-bottom: 18px;
-  padding-left: 5px;
-  padding-right: 5px;
-  font-size: 120%;
-}
-
 // Markdown footnotes
 //
 // See the example content post for an example.

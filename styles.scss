@@ -3,7 +3,7 @@
 # only main files contain this front matter, not partials.
 ---
 
-{% include responsive-nav.css %}
+{% include slicknav.min.css %}
 
 @import "variables";
 @import "base";

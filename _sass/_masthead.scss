@@ -3,23 +3,102 @@
 // Super small header above the content for site name and short description.
 
 .masthead {
-  padding-top:    1rem;
-  padding-bottom: 0;
-  margin: 0;
-}
+  padding: 0;
+  margin: 0 0 2rem 0;
+  width: 100%;
+  height: auto;
+  text-align: center;
 
-.masthead-title {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: $gray-4;
-
-  a {
-    color: inherit;
+  h1
+  {
+    color: $body-color;
+    font-family: "OpenSans-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 1.2;
+    padding: 1.5rem 0 0 0;
+    margin: 0;
   }
 
-  small {
-    font-size: 75%;
-    font-weight: 400;
-    opacity: .5;
+  h2
+  {
+    color: $body-color;
+    font-family: "OpenSans-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.2;
+    padding: 0.7rem 0 0 0;
+    margin: 0;
+  }
+}
+
+#menu {
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #fff;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 100%;
+
+    li {
+      font-family: "OpenSans-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: normal;
+      list-style: none;
+      -webkit-flex: 1 0;
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+      flex: 1 0;
+
+      a {
+        padding: 20px 0;
+        box-sizing: border-box;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+#menu ul li .icon {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 120%;
+}
+
+
+.slicknav_btn {
+  background: $body-bg;  
+}
+
+.slicknav_menu {
+  display: none;
+  background: $body-bg;
+}
+
+@media screen and (max-width: 850px) {
+  #menu {
+    display: none;
+  }
+  
+  .slicknav_menu {
+    display: block;
+  }
+
+  .slicknav_nav a {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
   }
 }

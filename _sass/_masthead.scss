@@ -94,11 +94,24 @@
   
   .slicknav_menu {
     display: block;
+    padding-bottom: 0;
+  }
+
+  .slicknav_nav {
+    font-family: "OpenSans-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 1.2rem;
   }
 
   .slicknav_nav a {
     display: inline-block;
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .masthead {
+    h1 {
+      padding: 0;
+    }
   }
 }

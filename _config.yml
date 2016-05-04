@@ -2,8 +2,8 @@
 permalink:           pretty
 
 highlighter:         rouge
-markdown: kramdown
-markdown_ext:  markdown,mkdown,mkdn,mkd,md
+markdown:            kramdown
+markdown_ext:        markdown,mkdown,mkdn,mkd,md
 
 # Setup
 title:               Corralx
@@ -12,7 +12,7 @@ url:                 https://corralx.github.io
 repo:                https://github.com/corralx/corralx.github.io
 paginate:            3
 baseurl:             ""
-excerpt_separator: <!--more-->
+excerpt_separator:   <!--more-->
 
 # Assets
 #
@@ -31,6 +31,10 @@ author:
   stackoverflow:     4141391
   stackexchange:     368929
   linkedin:          matteo-bertello-06538017
+
+collections:
+  projects:
+    output: true
 
 # Gems
 gems:

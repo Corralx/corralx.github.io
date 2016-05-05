@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<article class="page">
+	{{ content }}
+
+	{% assign projects = site.projects | sort: 'priority' %}
+	{% for project in projects %}
+  		<div class="project-container">
+  			<p><a class="project-title" href="{{ site.base_url }}/projects/{{ project.name }}">{{ project.title }}</a></p>
+  			<div class="project-image">
+  				<img src="{{ site.base_url }}/public/{{ project.image }}" alt="{{ project.title }} preview image">
+  			</div>
+  			<div class="project-description">
+  				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  			</div>
+  			<div class="project-links">
+  				<div class="project-link"><a href="{{ site.base_url }}/projects/{{ project.name }}">Read more</a></div>
+  				<div class="project-link"><a href="https://github.com/{{ site.author.github }}/{{ project.name }}" target="_blank" rel="noopener noreferrer">See on GitHub</a></div>
+  				{% if project.live-preview %}
+  					<div class="project-link"><a href="{{ site.base_url }}/{{ project.name }}" target="_blank" rel="noopener noreferrer">Live Preview</a></div>
+  				{% endif %}
+  			</div>
+  		</div>
+	{% endfor %}
+</article>

@@ -1,8 +1,8 @@
 ---
-title: Leviathan
-name: leviathan
+title: Occlusion Baker
+name: otb
 description: TODO
 image: placeholder.png
 live-preview: false
-priority: 30
+priority: 20
 ---

@@ -1,0 +1,47 @@
+.project-container {
+	width: 100%;
+	display: inline-block;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.project-title {
+	font-size: 24px;
+	color: $title-color;
+}
+
+.project-image {
+	float: left;
+	width: 49%;
+}
+
+.project-description {
+	float: right;
+	width: 49%;
+}
+
+.project-links {
+	clear: both;
+	text-align: center;
+	display: flex;
+	flex: 1 0;
+}
+
+.project-link {
+	width: 100%;
+	height: auto;
+	font-family: "OpenSans-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	list-style: none;
+}
+
+@media screen and (max-width: 850px) {
+	.project-image {
+		clear: both;
+		width: 100%;
+	}
+
+	.project-description {
+		width: 100%;
+	}
+}

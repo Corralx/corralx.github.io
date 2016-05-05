@@ -1,8 +1,8 @@
 ---
-title: Leviathan
-name: leviathan
+title: Elektra
+name: elektra
 description: TODO
 image: placeholder.png
 live-preview: false
-priority: 30
+priority: 40
 ---

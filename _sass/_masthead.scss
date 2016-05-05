@@ -11,7 +11,7 @@
 
   h1
   {
-    color: $body-color;
+    color: $title-color;
     font-family: "OpenSans-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-size: 40px;
@@ -22,12 +22,12 @@
 
   h2
   {
-    color: $body-color;
+    color: $title-color;
     font-family: "OpenSans-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-size: 18px;
     line-height: 1.2;
-    padding: 0.7rem 0 0 0;
+    padding: 0;
     margin: 0;
   }
 }
@@ -101,12 +101,14 @@
     font-family: "OpenSans-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-size: 1.2rem;
+	margin-bottom: 0.8rem;
   }
 
   .slicknav_nav a {
     display: inline-block;
     margin-left: 0;
     margin-right: 0;
+    color: $link-color;
   }
 
   .masthead {

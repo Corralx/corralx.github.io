@@ -5,6 +5,7 @@
 
 {% include slicknav.min.css %}
 
+@import "fa/font-awesome";
 @import "variables";
 @import "base";
 @import "type";
@@ -16,5 +17,4 @@
 @import "pagination";
 @import "message";
 @import "projects";
-
-@import "fa/font-awesome";
+@import "project";

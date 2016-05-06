@@ -8,7 +8,31 @@ layout: default
 	{% assign projects = site.projects | sort: 'priority' %}
 	{% for project in projects %}
   		<div class="project-container">
-  			<p><a class="project-title" href="{{ site.base_url }}/projects/{{ project.name }}">{{ project.title }}</a></p>
+        <div class="project-header">
+    			<a class="project-title" href="{{ site.base_url }}/projects/{{ project.name }}">{{ project.title }}</a>
+          <div class="project-icons">
+            {% assign platforms = project.platforms | replace ' ', '' | split: ',' %}
+            {% for platform in platforms %}
+              {% case platform %}
+                {% when "firefox" %}
+                  <i aria-hidden="true" class="platform-icon fa fa-firefox"></i>
+                {% when "chrome" %}
+                  <i aria-hidden="true" class="platform-icon fa fa-chrome"></i>
+                {% when "ie" %}
+                  <i aria-hidden="true" class="platform-icon fa fa-internet-explorer"></i>
+                {% when "opera" %}
+                  <i aria-hidden="true" class="platform-icon fa fa-opera"></i>
+                {% when "windows" %}
+                  <i aria-hidden="true" class="platform-icon fa fa-windows"></i>
+                {% when "macosx" %}
+                  <i aria-hidden="true" class="platform-icon fa fa-apple"></i>
+                {% when "linux" %}
+                  <i aria-hidden="true" class="platform-icon fa fa-linux"></i>
+                {% else %}
+              {% endcase %}
+            {% endfor %}
+          </div>
+        </div>
   			<div class="project-image">
   				<img src="{{ site.base_url }}/public/{{ project.image }}" alt="{{ project.title }} preview image">
   			</div>

@@ -5,9 +5,31 @@
 	margin-bottom: 20px;
 }
 
+.project-header {
+	width: 100%;
+	display: inline-block;
+	height: auto;
+}
+
 .project-title {
+	float: left;
 	font-size: 24px;
 	color: $title-link-color;
+}
+
+.project-icons {
+	width: auto;
+	height: auto;
+	display: inline-block;
+	float: right;
+	margin-top: 10px;
+}
+
+.platform-icon {
+	font-size: 110%;
+	color: $link-color;
+	margin-left: 3px;
+	margin-right: 3px;
 }
 
 .project-image {

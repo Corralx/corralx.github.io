@@ -5,4 +5,5 @@ description: TODO
 image: placeholder.png
 live-preview: true
 priority: 10
+layout: project
 ---

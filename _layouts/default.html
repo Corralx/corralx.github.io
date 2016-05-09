@@ -52,12 +52,23 @@
       </footer>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/public/jquery.slicknav.min.js"></script>
+
     <script>
     $('#menu').slicknav(
     {
       label: "",
       closeOnClick: true
     });
+    </script>
+
+    <script src="{{ site.baseurl }}/public/lightbox.min.js"></script>
+
+    <script>
+    lightbox.option({
+      'resizeDuration': 300
+    })
     </script>
 
     {% if site.analytics_id %}

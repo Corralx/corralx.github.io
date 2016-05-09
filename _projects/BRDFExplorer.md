@@ -7,5 +7,6 @@ image-full: brdf_explorer.full.jpg
 live-preview: true
 platforms: firefox,chrome,edge,opera
 priority: 10
+published: true
 layout: project
 ---

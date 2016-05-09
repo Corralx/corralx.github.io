@@ -7,5 +7,6 @@ image-full: placeholder.png
 live-preview: false
 platforms: windows,linux,macosx
 priority: 20
+published: true
 layout: project
 ---

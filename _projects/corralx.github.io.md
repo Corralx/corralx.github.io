@@ -7,5 +7,6 @@ image-full: placeholder.png
 live-preview: false
 platforms: firefox,chrome,edge,ie,opera
 priority: 100
+published: true
 layout: project
 ---

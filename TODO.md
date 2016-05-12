@@ -4,3 +4,5 @@
 * Investigate the more excerpt separator
 * Remove the icons we don't need from Font Awesome
 * Favicon
+* 404 page
+* Comment section with Disqus?

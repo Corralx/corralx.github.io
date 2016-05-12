@@ -8,5 +8,5 @@ live-preview: true
 platforms: firefox,chrome,edge,opera
 priority: 40
 published: true
-layout: project
+layout: page
 ---

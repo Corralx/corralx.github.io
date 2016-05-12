@@ -8,5 +8,5 @@ live-preview: false
 platforms: windows,linux,macosx
 priority: 20
 published: false
-layout: project
+layout: page
 ---

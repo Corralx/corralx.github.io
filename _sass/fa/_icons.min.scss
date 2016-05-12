@@ -1,0 +1,23 @@
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+
+.#{$fa-css-prefix}-github:before { content: $fa-var-github; }
+.#{$fa-css-prefix}-twitter-square:before { content: $fa-var-twitter-square; }
+.#{$fa-css-prefix}-envelope:before { content: $fa-var-envelope; }
+.#{$fa-css-prefix}-linkedin-square:before { content: $fa-var-linkedin-square; }
+.#{$fa-css-prefix}-youtube-square:before { content: $fa-var-youtube-square; }
+.#{$fa-css-prefix}-dropbox:before { content: $fa-var-dropbox; }
+.#{$fa-css-prefix}-stack-overflow:before { content: $fa-var-stack-overflow; }
+.#{$fa-css-prefix}-stack-exchange:before { content: $fa-var-stack-exchange; }
+.#{$fa-css-prefix}-bitbucket-square:before { content: $fa-var-bitbucket-square; }
+.#{$fa-css-prefix}-apple:before { content: $fa-var-apple; }
+.#{$fa-css-prefix}-windows:before { content: $fa-var-windows; }
+.#{$fa-css-prefix}-android:before { content: $fa-var-android; }
+.#{$fa-css-prefix}-linux:before { content: $fa-var-linux; }
+.#{$fa-css-prefix}-wikipedia-w:before { content: $fa-var-wikipedia-w; }
+.#{$fa-css-prefix}-safari:before { content: $fa-var-safari; }
+.#{$fa-css-prefix}-chrome:before { content: $fa-var-chrome; }
+.#{$fa-css-prefix}-firefox:before { content: $fa-var-firefox; }
+.#{$fa-css-prefix}-opera:before { content: $fa-var-opera; }
+.#{$fa-css-prefix}-internet-explorer:before { content: $fa-var-internet-explorer; }
+.#{$fa-css-prefix}-edge:before { content: $fa-var-edge; }

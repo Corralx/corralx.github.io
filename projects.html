@@ -3,8 +3,6 @@ layout: default
 ---
 
 <article class="page">
-	{{ content }}
-
 	{% assign projects = site.projects | sort: 'priority' | where:'published','true' %}
 	{% for project in projects %}
   		<div class="project-container">

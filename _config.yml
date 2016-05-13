@@ -1,6 +1,5 @@
-# Permalinks
+# Configuration
 permalink:           pretty
-
 highlighter:         rouge
 markdown:            kramdown
 markdown_ext:        markdown,mkdown,mkdn,mkd,md
@@ -14,9 +13,7 @@ paginate:            3
 baseurl:             ""
 excerpt_separator:   <!--more-->
 
-# Assets
-#
-# We specify the directory for Jekyll so we can use @imports.
+# Sass
 sass:
   sass_dir:          _sass
   style:             compressed
@@ -40,3 +37,6 @@ collections:
 gems:
   - jekyll-paginate
   - jekyll-gist
+
+# Exclude from conversion
+exclude: [.gitignore, CNAME, LICENSE.md, README.md, TODO.md]

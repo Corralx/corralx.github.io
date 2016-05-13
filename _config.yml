@@ -32,6 +32,8 @@ author:
 collections:
   projects:
     output: true
+  timeline:
+    output: false
 
 # Gems
 gems:

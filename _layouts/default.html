@@ -28,15 +28,13 @@
             </li>
             <li>
               <a class="icon" href="mailto:{{ site.author.email }}"><i class="fa fa-envelope"></i></a>
-              <!--
               <a class="icon" href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin-square"></i></a>
-              -->
               <a class="icon" href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a>
               <a class="icon" href="https://twitter.com/{{ site.author.twitter }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter-square"></i></a>
               <!--
               <a class="icon" href="https://stackoverflow.com/users/{{ site.author.stackoverflow }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-stack-overflow"></i></a>
-              <a class="icon" href="https://stackexchange.com/users/{{ site.author.stackexchange }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-stack-exchange"></i></a>
               -->
+              <a class="icon" href="https://stackexchange.com/users/{{ site.author.stackexchange }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-stack-exchange"></i></a>
             </li>
           </ul>
         </nav>
@@ -56,7 +54,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="{{ site.baseurl }}/public/js/jquery.slicknav.min.js"></script>
-
     <script>
     $('#menu').slicknav(
     {
@@ -66,12 +63,13 @@
     </script>
 
     <script src="{{ site.baseurl }}/public/js/lightbox.min.js"></script>
-
     <script>
     lightbox.option({
       'resizeDuration': 300
     })
     </script>
+
+    <script src="{{ site.base_url }}/public/js/timeline.js"></script>
 
     {% if site.analytics_id %}
     <script>

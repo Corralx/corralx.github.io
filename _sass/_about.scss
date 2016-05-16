@@ -1,19 +1,28 @@
 #about-container {
 	width: 100%;
 	height: auto;
+  text-align: center;
+  margin-top: 40px;
 }
 
 #about-photo {
-	float: left;
-	width: 19%;
-	height: auto;
-	border-radius: 10px;
+  float: left;
+  display: inline-block;
+  max-width: 150px;
+	border-radius: 50%;
 	box-shadow: 5px 5px 3px #212121;
+  margin-right: 25px;
 }
 
-#about-photo-text {
-	float: right;
-	width: 79%;
+@media only screen and (max-width: 850px) {
+  #about-photo {
+    float: none;
+    margin-right: 0;
+  }
+
+  #about-photo-text {
+    margin-top: 15px;
+  }
 }
 
 #about-desc {
@@ -26,10 +35,11 @@
   padding: 2em 0;
   margin-top: 2em;
   margin-bottom: 2em;
+  text-align: left;
 }
 
 #cd-timeline::before {
-  /* this is the vertical line */
+  /* middle vertical line */
   content: '';
   position: absolute;
   top: 0;
@@ -44,6 +54,7 @@
     margin-top: 3em;
     margin-bottom: 3em;
   }
+
   #cd-timeline::before {
     left: 50%;
     margin-left: -1px;
@@ -88,6 +99,7 @@
   width: 40px;
   height: 40px;
   background: $body-bg;
+  margin-left: -2px;
   border: 2px solid $body-color;
   border-radius: 50%;
 }
@@ -104,22 +116,25 @@
   text-align: center;
 }
 
-.cs-timeline-wrench {
-  font-size: 200%;
-  margin-top: -2px;
+.cd-timeline-wrench {
+  font-size: 160%;
+  margin-top: -6px;
 }
 
-.cs-timeline-fork {
-  font-size: 210%;
+.cd-timeline-fork {
+  font-size: 190%;
+  margin-top: -4px;
   margin-right: -2px;
 }
 
-.cs-timeline-cap {
-  font-size: 170%;
+.cd-timeline-cap {
+  font-size: 140%;
+  margin-top: -5px;
 }
 
-.cs-timeline-mic {
-  font-size: 200%;
+.cd-timeline-mic {
+  font-size: 170%;
+  margin-top: -4px;
 }
 
 @media only screen and (min-width: 850px) {
@@ -132,9 +147,32 @@
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
   }
+
+  .cd-timeline-wrench {
+    font-size: 200%;
+    margin-top: -1px;
+  }
+
+  .cd-timeline-fork {
+    font-size: 220%;
+    margin-right: -2px;
+    margin-top: 0;
+  }
+
+  .cd-timeline-cap {
+    font-size: 170%;
+    margin-top: 1px;
+  }
+
+  .cd-timeline-mic {
+    font-size: 200%;
+    margin-top: 0;
+  }
+
   .cssanimations .cd-timeline-img.is-hidden {
     visibility: hidden;
   }
+
   .cssanimations .cd-timeline-img.bounce-in {
     visibility: visible;
     -webkit-animation: cd-bounce-1 0.6s;
@@ -205,8 +243,9 @@
 
 .cd-timeline-content {
   position: relative;
-  margin-left: 60px;
+  margin-left: 50px;
   padding: 0.9em;
+  padding-top: 0.8em;
   line-height: 1.4;
   background-color: $code-background;
   border-radius: 3px;
@@ -226,8 +265,7 @@
 }
 
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
-  font-size: 13px;
-  font-size: 0.8125rem;
+  font-size: $code-font-size;
 }
 
 .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
@@ -239,21 +277,14 @@
   line-height: 1.6;
 }
 
-.cd-timeline-content .cd-read-more {
-  float: right;
-  padding: .8em 1em;
-  background: #acb7c0;
-  color: white;
-  border-radius: 0.25em;
-}
-
 .no-touch .cd-timeline-content .cd-read-more:hover {
   background-color: #bac4cb;
 }
 
 .cd-timeline-content .cd-date {
   float: left;
-  padding: .8em 0;
+  padding: 0;
+  padding-top: .8em;
   color: $title-color;
 }
 
@@ -278,17 +309,7 @@
     //padding: 1.6em;
     width: 45%;
   }
-  /*
-  .cd-timeline-content::before {
-    top: 24px;
-    left: 100%;
-    border-color: transparent;
-    border-left-color: $code-background;
-  }
-  */
-  .cd-timeline-content .cd-read-more {
-    float: left;
-  }
+
   .cd-timeline-content .cd-date {
     position: absolute;
     width: 100%;
@@ -297,9 +318,11 @@
     font-size: 16px;
     font-size: 1rem;
   }
+
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
     float: right;
   }
+
   .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
     top: 24px;
     left: auto;
@@ -307,17 +330,21 @@
     border-color: transparent;
     border-right-color: white;
   }
+
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
     float: right;
   }
+
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
     left: auto;
     right: 122%;
     text-align: right;
   }
+
   .cssanimations .cd-timeline-content.is-hidden {
     visibility: hidden;
   }
+
   .cssanimations .cd-timeline-content.bounce-in {
     visibility: visible;
     -webkit-animation: cd-bounce-2 0.6s;

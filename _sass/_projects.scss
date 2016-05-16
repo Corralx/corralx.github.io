@@ -2,7 +2,11 @@
 	width: 100%;
 	display: inline-block;
 	height: auto;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
+}
+
+.project-container:last-of-type {
+	margin-bottom: 0;
 }
 
 .project-header {

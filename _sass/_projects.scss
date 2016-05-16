@@ -47,18 +47,25 @@
 }
 
 .project-links {
-	clear: both;
+	width: 100%;
 	text-align: center;
-	display: flex;
-	flex: 1 0;
+	clear: both;
 }
 
 .project-link {
-	width: 100%;
+	display: inline-block;
 	height: auto;
 	font-family: "OpenSans-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	list-style: none;
+}
+
+.width-33 {
+	width: 33%;
+}
+
+.width-50 {
+	width: 49.5%;
 }
 
 @media screen and (max-width: 850px) {
@@ -69,5 +76,11 @@
 
 	.project-description {
 		width: 100%;
+	}
+
+	.project-link {
+		display: block;
+		width: 100% ! important;
+		margin-top: 10px;
 	}
 }

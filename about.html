@@ -19,20 +19,29 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus est at e
 	</div>
 
 	<section id="cd-timeline" class="cd-container cssanimations">
-		{% assign events = site.timeline | where:'published','true' %}
+		{% assign events = site.timeline | where:'published','true' | sort: 'date' | reverse %}
 		{% for event in events %}
 			<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-picture">
-				<img src="{{ site.base_url }}/public/img/cd-icon-picture.svg" alt="Picture">
-			</div> <!-- cd-timeline-img -->
+			<div class="cd-timeline-img">
+				{% case event.category %}
+                	{% when "work" %}
+                  		<i aria-hidden="true" class="cs-timeline-icon cs-timeline-wrench fa fa-wrench"></i>
+                	{% when "project" %}
+                  		<i aria-hidden="true" class="cs-timeline-icon cs-timeline-fork fa fa-code-fork"></i>
+                	{% when "education" %}
+                  		<i aria-hidden="true" class="cs-timeline-icon cs-timeline-cap fa fa-graduation-cap"></i>
+                  	{% when "conference" %}
+                  		<i aria-hidden="true" class="cs-timeline-icon cs-timeline-mic fa fa-microphone"></i>
+                	{% else %}
+              	{% endcase %}
+			</div>
 
 			<div class="cd-timeline-content">
 				<h2>{{ event.title }}</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-				<a href="#0" class="cd-read-more">Read more</a>
-				<span class="cd-date">Jan 14</span>
-			</div> <!-- cd-timeline-content -->
-			</div> <!-- cd-timeline-block -->
+				<p>{{ event.description }}</p>
+				<span class="cd-date">{{ event.date | date_to_long_string }}</span>
+			</div>
+			</div>
 		{% endfor %}
-	</section> <!-- cd-timeline -->
+	</section>
 </div>

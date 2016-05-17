@@ -7,4 +7,6 @@ The project is built with [Jekyll](https://jekyllrb.com/) and the following libr
 * [SlickNav](http://slicknav.com/)
 * [Lightbox](http://lokeshdhakar.com/projects/lightbox2/)
 
+The timeline in the About page is based on https://codyhouse.co/gem/vertical-timeline/.
+
 The theme is a Jekyll port of the [Midnight Theme](https://github.com/mattgraham/midnight) by [Matt Graham](http://madebygraham.com/), based on the modification made by [rcrmn](http://rcrmn.github.io).

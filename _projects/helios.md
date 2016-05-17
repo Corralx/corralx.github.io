@@ -6,7 +6,7 @@ image-preview: placeholder.png
 image-full: placeholder.png
 live-preview: false
 platforms: windows
-priority: 30
+priority: 40
 published: false
 layout: page
 ---

@@ -2,7 +2,7 @@
 	width: 100%;
 	height: auto;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 #about-photo {
@@ -12,6 +12,12 @@
 	border-radius: 50%;
 	box-shadow: 5px 5px 3px #212121;
   margin-right: 25px;
+  margin-bottom: 8px;
+  margin-top: 10px;
+}
+
+#about-photo-text {
+  text-align: left;
 }
 
 @media only screen and (max-width: 850px) {
@@ -28,6 +34,7 @@
 #about-desc {
 	width: 100%;
 	clear: both;
+  text-align: left;
 }
 
 #cd-timeline {
@@ -262,6 +269,7 @@
 .cd-timeline-content h2 {
   color: $title-color;
   margin: 0;
+  font-size: 17px;
 }
 
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
@@ -290,8 +298,7 @@
 
 @media only screen and (min-width: 850px) {
   .cd-timeline-content h2 {
-    font-size: 20px;
-    font-size: 1.25rem;
+    font-size: 17px;
   }
   .cd-timeline-content p {
     font-size: 16px;

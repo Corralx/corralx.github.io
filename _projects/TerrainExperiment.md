@@ -6,7 +6,7 @@ image-preview: terrain.preview.jpg
 image-full: terrain.full.jpg
 live-preview: true
 platforms: firefox,chrome,edge,opera
-priority: 40
+priority: 50
 published: true
 layout: page
 ---

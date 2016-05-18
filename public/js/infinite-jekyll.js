@@ -67,7 +67,7 @@ $(function() {
     $.get(postURL, function(data) {
       var content = $(data).find(".post");
       content.find(".excerpt").parent().nextAll().remove();
-      content.append('<a class="read-more" href="{{ site.baseurl }}{{ post.url }}" role="button">Read more <i class="fa fa-arrow-circle-right read-more-arrow"></i></a>').appendTo(".posts");
+      content.append('<a class="read-more" href="http://corralx.me' + postURL + '" role="button">Read more <i class="fa fa-arrow-circle-right read-more-arrow"></i></a>').appendTo(".posts");
       callback();
     });
   }

@@ -82,5 +82,13 @@
        ga('send', 'pageview');
     </script>
     {% endif %}
+
+    <script>
+      $(document).ready(function() {
+        setTimeout(function() {
+          $(document).trigger("scroll");
+        }, 200);
+      });
+    </script>
   </body>
 </html>

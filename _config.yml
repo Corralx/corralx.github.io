@@ -7,11 +7,10 @@ markdown_ext:        markdown,mkdown,mkdn,mkd,md
 # Setup
 title:               Corralx
 tagline:             My slice of reality
-url:                 https://corralx.github.io
+url:                 http://corralx.me
 repo:                https://github.com/corralx/corralx.github.io
-paginate:            3
 baseurl:             ""
-excerpt_separator:   <!--more-->
+excerpt_separator:   <i class="excerpt" aria-hidden="true"></i>
 
 # Sass
 sass:
@@ -37,7 +36,6 @@ collections:
 
 # Gems
 gems:
-  - jekyll-paginate
   - jekyll-gist
 
 # Exclude from conversion

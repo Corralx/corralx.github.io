@@ -4,7 +4,7 @@ title: Home
 ---
 
 <div class="posts">
-  {% for post in paginator.posts %}
+  {% for post in site.posts limit: 3 %}
   <article class="post">
     <h1 class="post-title">
       <a href="{{ site.baseurl }}{{ post.url }}">
@@ -12,24 +12,37 @@ title: Home
       </a>
     </h1>
     <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">Posted on {{ post.date | date_to_string }}</time>
-    {{ post.content }}
+    {{ post.excerpt }}
+    {% capture content_words %} 
+      {{ post.content | number_of_words }} 
+    {% endcapture %} 
+    {% capture excerpt_words %} 
+      {{ post.excerpt | number_of_words }} 
+    {% endcapture %} 
+    {% if excerpt_words != content_words %}
+      <a class="read-more" href="{{ site.baseurl }}{{ post.url }}" role="button">Read more <i class="fa fa-arrow-circle-right read-more-arrow"></i></a>
+    {% endif %}
   </article>
   {% endfor %}
 </div>
 
+<div class="infinite-spinner">
+  <div class="sk-wave">
+    <div class="sk-rect sk-rect1"></div>
+    <div class="sk-rect sk-rect2"></div>
+    <div class="sk-rect sk-rect3"></div>
+    <div class="sk-rect sk-rect4"></div>
+    <div class="sk-rect sk-rect5"></div>
+  </div>
+</div>
+
+{% comment %}
 <div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
-  {% comment %}
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endcomment %}
-  {% endif %}
-  {% if paginator.previous_page %}
-    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
-  {% comment %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endcomment %}
+  {% if paginator.next_page or paginator.previous_page %}
+    <a class="pagination-item" href="{{ site.baseurl }}/page{{ paginator.total_pages }}"><i class="fa fa-angle-double-left fa-2x" aria-hidden="true"></i></a>
+    <a class="pagination-item" href="{{ paginator.next_page_path | prepend: site.baseurl }}"><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></a>
+    <a class="pagination-item" href="{{ paginator.previous_page_path | prepend: site.baseurl }}"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></a>
+    <a class="pagination-item" href="{{ site.baseurl }}"><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></a>
   {% endif %}
 </div>
+{% endcomment %}

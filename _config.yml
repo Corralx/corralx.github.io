@@ -11,6 +11,7 @@ url:                 http://corralx.me
 repo:                https://github.com/corralx/corralx.github.io
 baseurl:             ""
 excerpt_separator:   <i class="excerpt" aria-hidden="true"></i>
+analytics_id:        UA-44043229-2
 
 # Sass
 sass:

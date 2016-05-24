@@ -31,7 +31,7 @@ author:
 
 collections:
   projects:
-    output: true
+    output: false
   timeline:
     output: false
 

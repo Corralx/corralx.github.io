@@ -79,3 +79,7 @@ tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: $code-background;
 }
+
+ul {
+	list-style-image: url("public/bullet.png");
+}

@@ -48,7 +48,7 @@
 
 .project-links {
 	width: 100%;
-	text-align: center;
+	text-align: right;
 	clear: both;
 }
 
@@ -58,14 +58,8 @@
 	font-family: "OpenSans-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	list-style: none;
-}
-
-.width-33 {
-	width: 32%;
-}
-
-.width-50 {
 	width: 49%;
+	margin-top: 10px;
 }
 
 @media screen and (max-width: 850px) {

@@ -8,7 +8,7 @@ title: Projects
 	{% for project in projects %}
   		<div class="project-container">
         <div class="project-header">
-    			<a class="project-title" href="{{ site.base_url }}/projects/{{ project.name }}">{{ project.title }}</a>
+    			<a class="project-title" href="https://github.com/{{ site.author.github }}/{{ project.name }}" target="_blank" rel="noopener noreferrer">{{ project.title }}</a>
           <div class="project-icons">
             {% assign platforms = project.platforms | replace ' ', '' | split: ',' %}
             {% for platform in platforms %}
@@ -43,16 +43,14 @@ title: Projects
         {% else %}
           {{ project.description }}
         {% endif %}
-  			</div>
-  			<div class="project-links">
-          {% if project.live-preview %}
-  				  <div class="project-link width-33"><a href="{{ site.base_url }}/projects/{{ project.name }}">Read more <i aria-hidden="true" class="fa fa-arrow-circle-right project-more-icon"></i></a></div>
-  				  <div class="project-link width-33"><a href="https://github.com/{{ site.author.github }}/{{ project.name }}" target="_blank" rel="noopener noreferrer">See it on GitHub <i aria-hidden="true" class="fa fa-github project-more-icon"></i></a></div>
-  					<div class="project-link width-33"><a href="{{ site.base_url }}/{{ project.name }}" target="_blank" rel="noopener noreferrer">Live Preview  <i aria-hidden="true" class="fa fa-play-circle project-more-icon"></i></a></div>
-          {% else %}
-            <div class="project-link width-50"><a href="{{ site.base_url }}/projects/{{ project.name }}">Read more <i aria-hidden="true" class="fa fa-arrow-circle-right project-more-icon"></i></a></div>
-            <div class="project-link width-50"><a href="https://github.com/{{ site.author.github }}/{{ project.name }}" target="_blank" rel="noopener noreferrer">See it on GitHub <i aria-hidden="true" class="fa fa-github project-more-icon"></i></a></div>
-  				{% endif %}
+          <div class="project-links">
+            {% if project.live-preview %}
+              <div class="project-link"><a href="{{ site.base_url }}/{{ project.name }}" target="_blank" rel="noopener noreferrer">Live Preview  <i aria-hidden="true" class="fa fa-play-circle project-more-icon"></i></a></div>
+              <div class="project-link"><a href="https://github.com/{{ site.author.github }}/{{ project.name }}" target="_blank" rel="noopener noreferrer">See it on GitHub <i aria-hidden="true" class="fa fa-github project-more-icon"></i></a></div>
+            {% else %}
+              <div class="project-link"><a href="https://github.com/{{ site.author.github }}/{{ project.name }}" target="_blank" rel="noopener noreferrer">See it on GitHub <i aria-hidden="true" class="fa fa-github project-more-icon"></i></a></div>
+            {% endif %}
+          </div>
   			</div>
   		</div>
 	{% endfor %}

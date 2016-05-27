@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Example content 2
-published: true
+published: false
 ---
 
 

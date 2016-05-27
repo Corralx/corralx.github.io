@@ -40,4 +40,4 @@ gems:
   - jekyll-gist
 
 # Exclude from conversion
-exclude: [.gitignore, CNAME, LICENSE.md, README.md, TODO.md]
+exclude: [.gitignore, CNAME, LICENSE.md, README.md, TODO.md, highlight_example.html]

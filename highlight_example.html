@@ -1,0 +1,17 @@
+<figure class="highlight"><pre><code><span class="hl-preprocessor">#include</span> <span class="hl-include">&lt;cassert&gt;</span>
+
+<span class="hl-comment">/* A useful comment */</span>
+<span class="hl-keyword">struct</span> <span class="hl-user-type">tagged_pointer</span>
+{
+  <span class="hl-user-type">object_type</span>* <span class="hl-identifier">pointer</span> = <span class="hl-constant">123456</span>;
+  <span class="hl-prim-type">bool</span> dirty_flag;
+  <span class="hl-prim-type">int</span> some_value;
+  std::<span class="hl-user-type">string</span> a_string = <span class="hl-string">"hello string"</span>;
+};
+
+<span class="hl-prim-type">void</span> function(<span class="hl-user-type">uint8_t</span> <span class="hl-param">param</span> = <span class="hl-constant">0</span>)
+{
+  <span class="hl-macro">assert</span>(<span class="hl-keyword">false</span>);
+  <span class="keyword">return</span>;
+}
+</code></pre></figure>

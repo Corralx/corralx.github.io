@@ -76,11 +76,18 @@
     </script>
     {% endif %}
 
+    <!--<script src="{{ site.base_url }}/public/js/highlight.js"></script>-->
+
     <script>
       $(document).ready(function() {
         setTimeout(function() {
           $(document).trigger("scroll");
         }, 200);
+        /*
+        $('.highlight-cpp').each(function(i, block) {
+          hljs.highlightBlock(block);
+        });
+        */
       });
     </script>
   </body>
